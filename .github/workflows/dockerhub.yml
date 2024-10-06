@@ -1,6 +1,8 @@
 name: docker-push-dockerhub
 
-on: workflow_dispatch:
+  push:
+    branches: ["release"]
+  workflow_dispatch: # This allows manual triggering
 
 
 jobs:
